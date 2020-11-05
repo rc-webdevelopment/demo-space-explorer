@@ -1,0 +1,7 @@
+<p>launch-list works!</p>
+
+<ul *ngIf="launches">
+  <li *ngFor="let launch of launches | async">
+    {{ launch.mission.name }}
+  </li>
+</ul>

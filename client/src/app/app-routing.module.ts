@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { LaunchListComponent } from './launch-list/launch-list.component';
+
+const routes: Routes = [
+  { path: '', component: LaunchListComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
