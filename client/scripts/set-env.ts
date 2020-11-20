@@ -28,6 +28,7 @@ export const environment = {
 writeFile(
     targetPath,
     output,
+    { flag: 'w' },
     (err: Error) => {
         if (err) {
             console.error(err);
